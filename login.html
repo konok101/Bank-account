@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br> <br> <br>
+    <input id="user-Email" type="email" name="" id=""> <br>
+    <input id="user-Pass" type="password" name="" id=""> <br>
+
+    <button id="loginSubmit">login</button>
+
+    <script>
+
+        document.getElementById('loginSubmit').addEventListener('click', function () {
+            const emailField = document.getElementById('user-Email');
+            const userEmail = emailField.value;
+
+            const passField = document.getElementById('user-Pass');
+
+            const userPass = passField.value;
+
+            if (userEmail == 'konok@gmail.com' && userPass == 'konok') {
+                window.location.href = 'index.html'
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
